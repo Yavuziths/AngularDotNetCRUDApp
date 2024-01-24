@@ -1,0 +1,20 @@
+[
+  {
+    "Id": 1,
+    "UserId": 1,
+    "Text": "Start writing, no matter what. The water does not flow until the faucet is turned on.",
+    "Author": "Louis L\u2019Amour"
+  },
+  {
+    "Id": 2,
+    "UserId": 1,
+    "Text": "You can\u2019t wait for inspiration. You have to go after it with a club.",
+    "Author": "Jack London"
+  },
+  {
+    "Id": 3,
+    "UserId": 6,
+    "Text": "du",
+    "Author": "luktar"
+  }
+]

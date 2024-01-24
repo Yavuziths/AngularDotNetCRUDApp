@@ -11,7 +11,7 @@ describe('MyQuotesComponent', () => {
       imports: [MyQuotesComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(MyQuotesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

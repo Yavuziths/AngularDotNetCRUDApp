@@ -1,0 +1,17 @@
+<form (ngSubmit)="onSubmit()" #registrationForm="ngForm">
+  <input
+    type="text"
+    [(ngModel)]="user.username"
+    name="username"
+    placeholder="username"
+    required
+  />
+  <input
+    type="password"
+    [(ngModel)]="user.password"
+    name="password"
+    placeholder="password"
+    required
+  />
+  <button type="submit">Create User</button>
+</form>

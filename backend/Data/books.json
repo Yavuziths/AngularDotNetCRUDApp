@@ -1,0 +1,14 @@
+[
+  {
+    "Id": 2,
+    "Title": "Game of Thrones",
+    "Author": "George R, R Martin",
+    "PublishDate": "2024-01-19T00:00:00"
+  },
+  {
+    "Id": 3,
+    "Title": "olle",
+    "Author": "J-K Rowling",
+    "PublishDate": "2024-01-24T00:00:00"
+  }
+]

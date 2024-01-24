@@ -1,1 +1,17 @@
-<p>book-list works!</p>
+<h3>Mina böcker</h3>
+<button class="btn btn-primary" (click)="addBook()">Lägg till bok</button>
+<ul class="list-group list-group-flush">
+  <li
+    *ngFor="let book of books"
+    class="list-group-item"
+    [ngClass]="{ 'dark-mode': isDarkMode, 'light-mode': !isDarkMode }"
+  >
+    {{ book.title }} by {{ book.author }}
+    <button class="btn btn-primary" (click)="editBook(book.id)">
+      Redigera
+    </button>
+    <button class="btn btn-danger" (click)="deleteBook(book.id)">
+      Ta bort
+    </button>
+  </li>
+</ul>

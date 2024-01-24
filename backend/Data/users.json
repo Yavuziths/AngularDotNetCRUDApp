@@ -1,0 +1,38 @@
+[
+  {
+    "Id": 1,
+    "Username": "yavuz",
+    "PasswordHash": "$2a$11$2/8pfJCffsIOtyAo.i1Z6esNilXJyqsDGoiBJykwnUb23sQhqX7qu",
+    "Password": null
+  },
+  {
+    "Id": 2,
+    "Username": "Strumpa",
+    "PasswordHash": "$2a$11$pxidClVazy5eo2M50LMnb.qOuA9LGycfg1pwKOfApd0Em6oGbyHIi",
+    "Password": null
+  },
+  {
+    "Id": 3,
+    "Username": "ya",
+    "PasswordHash": "$2a$11$LMKzXIgxU8A1IcU5PIvQPuT3sAYo72D/nM.8FP0ha4pWOVJPbbAQK",
+    "Password": null
+  },
+  {
+    "Id": 4,
+    "Username": "yapp",
+    "PasswordHash": "$2a$11$RQT3E3lRgso.Uj8MhyXVFOly51tdea5Bs3iBDxvQmREPMo7m0SWOi",
+    "Password": null
+  },
+  {
+    "Id": 5,
+    "Username": "duja",
+    "PasswordHash": "$2a$11$C3k5ddBOcony8v3Iy7qiCOtBt/Ms2jYfwgjhzSy/V1KW2UfCvmK1a",
+    "Password": null
+  },
+  {
+    "Id": 6,
+    "Username": "jess",
+    "PasswordHash": "$2a$11$lN/cFQwcgPadP27Sh/QCp.3c/eNxqCCgtwYCTh9ud9w3zGuzzFSXC",
+    "Password": null
+  }
+]

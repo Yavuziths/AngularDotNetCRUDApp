@@ -1,13 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Frontend</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Your Angular App</title>
+    <base href="/" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Add your other meta tags, styles, and scripts here -->
+
+    <!-- Include Angular scripts and styles (these may vary based on your Angular version) -->
+
+    <!-- Toggle Dark Mode button -->
+    <style>
+      .dark-mode {
+        background-color: #333333;
+        color: #ffffff;
+      }
+
+      .light-mode {
+        background-color: #ffffff;
+        color: #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <app-root
+      [class.dark-mode]="isDarkMode"
+      [class.light-mode]="!isDarkMode"
+    ></app-root>
+  </body>
 </html>

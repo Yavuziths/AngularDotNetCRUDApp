@@ -1,6 +1,4 @@
-using System;
-
-namespace backend.Models
+namespace AngularDotNetCRUDApp.Models
 {
     public class Book
     {
@@ -8,5 +6,12 @@ namespace backend.Models
         public string Title { get; set; }
         public string Author { get; set; }
         public DateTime PublishDate { get; set; }
+
+        public Book()
+        {
+            // Initialize non-nullable properties in the constructor
+            Title = "";
+            Author = "";
+        }
     }
 }

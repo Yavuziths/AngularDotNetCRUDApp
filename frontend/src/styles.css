@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+/* Light Mode */
+.navbar-light.bg-light {
+  background-color: #f8f9fa !important;
+  color: #000 !important;
+}
+
+/* Dark Mode */
+.dark-mode .navbar-light.bg-light {
+  background-color: #55555555 !important;
+  color: #fff !important;
+}
+
+/* Additional styles for dark mode */
+.dark-mode ul.list-group li {
+  background-color: #55555555 !important;
+  color: #fff !important;
+}
+
+/* Additional styles for light mode */
+.light-mode ul.list-group li {
+  background-color: #fff !important;
+  color: #000 !important;
+}

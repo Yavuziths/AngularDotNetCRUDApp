@@ -1,6 +1,42 @@
-<nav>
-  <a routerLink="/books">Books</a>
-  <a routerLink="/add-book">Add Book</a>
-  <a routerLink="/quotes">My Quotes</a>
+<nav
+  class="navbar navbar-expand-lg"
+  [ngClass]="isDarkMode ? 'navbar-dark bg-dark' : 'navbar-light bg-light'"
+  *ngIf="isAuthenticated()"
+>
+  <a class="navbar-brand">
+    <i class="fa fa-book"></i>
+  </a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/books">Books</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/quotes">Quotes</a>
+      </li>
+    </ul>
+  </div>
+  <button
+    class="btn"
+    [ngClass]="isDarkMode ? 'btn-outline-light' : 'btn-outline-dark'"
+    (click)="toggleDarkMode()"
+  >
+    {{ isDarkMode ? "Light Mode" : "Dark Mode" }}
+  </button>
+
+  <button class="btn btn-outline-danger my-2 my-sm-0" (click)="logout()">
+    Logout
+  </button>
 </nav>
 <router-outlet></router-outlet>
