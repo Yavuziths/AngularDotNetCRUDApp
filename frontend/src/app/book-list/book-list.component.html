@@ -1,17 +1,24 @@
-<h3>Mina böcker</h3>
-<button class="btn btn-primary" (click)="addBook()">Lägg till bok</button>
+<h3>Books</h3>
+<button class="btn btn-primary" (click)="addBook()">Add Book</button>
+
 <ul class="list-group list-group-flush">
   <li
     *ngFor="let book of books"
-    class="list-group-item"
+    class="list-group-item book-item"
     [ngClass]="{ 'dark-mode': isDarkMode, 'light-mode': !isDarkMode }"
   >
-    {{ book.title }} by {{ book.author }}
-    <button class="btn btn-primary" (click)="editBook(book.id)">
-      Redigera
-    </button>
-    <button class="btn btn-danger" (click)="deleteBook(book.id)">
-      Ta bort
-    </button>
+    <div class="book-details">
+      <i class="fas fa-book"></i>
+      <!-- Font Awesome book icon -->
+      <span>{{ book.title }} by {{ book.author }}</span>
+    </div>
+    <div class="book-buttons">
+      <button class="btn btn-primary" (click)="editBook(book.id)">
+        Redigera
+      </button>
+      <button class="btn btn-danger" (click)="deleteBook(book.id)">
+        Ta bort
+      </button>
+    </div>
   </li>
 </ul>

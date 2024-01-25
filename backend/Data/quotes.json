@@ -16,5 +16,11 @@
     "UserId": 6,
     "Text": "du",
     "Author": "luktar"
+  },
+  {
+    "Id": 4,
+    "UserId": 2,
+    "Text": "Jag luktar",
+    "Author": "Bajs"
   }
 ]

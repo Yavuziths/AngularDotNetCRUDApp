@@ -7,8 +7,14 @@
   },
   {
     "Id": 3,
-    "Title": "olle",
+    "Title": "Harry Potter",
     "Author": "J-K Rowling",
-    "PublishDate": "2024-01-24T00:00:00"
+    "PublishDate": "2024-01-25T00:00:00"
+  },
+  {
+    "Id": 4,
+    "Title": "Harry Potter VII",
+    "Author": "J-K Rowling",
+    "PublishDate": "2024-01-25T00:00:00"
   }
 ]

@@ -1,14 +1,15 @@
 <div class="container">
   <h1>Mina citat</h1>
-  <ul>
-    <li *ngFor="let quote of myQuotes">
-      {{ quote.text }} - {{ quote.author }}
-      <button (click)="deleteQuote(quote.id)" class="btn btn-danger">
+  <ul class="quote-list">
+    <li *ngFor="let quote of myQuotes" class="quote-item">
+      <div class="quote-text">{{ quote.text }}</div>
+      <div class="quote-author">{{ quote.author }}</div>
+      <button (click)="deleteQuote(quote.id)" class="btn btn-danger btn-sm">
         Delete
       </button>
     </li>
   </ul>
-  <form (submit)="addQuote()">
+  <form (submit)="addQuote()" class="quote-form">
     <div class="form-group">
       <label for="text">Quotes:</label>
       <input

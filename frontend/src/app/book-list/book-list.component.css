@@ -1,0 +1,30 @@
+.book-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  background-color: rgb(224, 224, 224);
+}
+
+.book-details {
+  display: flex;
+  align-items: center;
+}
+
+.book-details i {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.book-buttons {
+  display: flex;
+  gap: 10px; /* Adjust the gap as needed */
+}
+
+/* Set a fixed width for the buttons */
+.book-buttons button {
+  width: 100px; /* Adjust the width as needed */
+}
+
+.btn-primary {
+  margin-bottom: 10px;
+}

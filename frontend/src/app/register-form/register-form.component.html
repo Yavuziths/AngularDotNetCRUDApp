@@ -1,17 +1,25 @@
-<form (ngSubmit)="onSubmit()" #registrationForm="ngForm">
-  <input
-    type="text"
-    [(ngModel)]="user.username"
-    name="username"
-    placeholder="username"
-    required
-  />
-  <input
-    type="password"
-    [(ngModel)]="user.password"
-    name="password"
-    placeholder="password"
-    required
-  />
-  <button type="submit">Create User</button>
-</form>
+<div class="container">
+  <div class="register-box">
+    <form (ngSubmit)="onSubmit()" #registrationForm="ngForm">
+      <h2>Register</h2>
+      <!-- Add a title for clarity -->
+      <input
+        type="text"
+        [(ngModel)]="user.username"
+        name="username"
+        placeholder="Username"
+        required
+      />
+      <input
+        type="password"
+        [(ngModel)]="user.password"
+        name="password"
+        placeholder="Password"
+        required
+      />
+      <div class="button-container">
+        <button type="submit">Create User</button>
+      </div>
+    </form>
+  </div>
+</div>

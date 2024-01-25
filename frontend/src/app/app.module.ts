@@ -11,6 +11,8 @@ import { MyQuotesComponent } from './my-quotes/my-quotes.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,7 @@ import { RegisterFormComponent } from './register-form/register-form.component';
     RouterModule.forRoot(appRoutes),
     ReactiveFormsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
