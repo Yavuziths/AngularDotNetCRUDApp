@@ -10,7 +10,7 @@ using AngularDotNetCRUDApp.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.AspNetCore.SpaServices.Extensions;
+using Microsoft.Extensions.Logging; // Add this using statement
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -90,27 +90,24 @@ app.UseHttpsRedirection();
 
 app.UseRouting();
 
+// Add error handling middleware
+app.UseExceptionHandler("/Home/Error");
+app.UseHsts();
+
 app.UseAuthentication();
-
-
-app.MapControllers();
-app.UseSpaStaticFiles();
-app.UseRouting();
 app.UseAuthorization();
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllerRoute(
-        name: "default",
-        pattern: "{controller}/{action=Index}/{id?}");
-});
 
+app.UseStaticFiles(); // Serve static files (CSS, JavaScript, images, etc.)
+
+// Configure SPA
 app.UseSpa(spa =>
 {
-    spa.Options.SourcePath = "ClientApp";
+    spa.Options.SourcePath = "frontend"; // Adjust this path based on your Angular app's location
 
     if (app.Environment.IsDevelopment())
     {
         spa.UseProxyToSpaDevelopmentServer("http://localhost:4200");
     }
 });
+
 app.Run();
