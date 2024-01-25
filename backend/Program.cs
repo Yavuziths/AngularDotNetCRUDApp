@@ -10,7 +10,8 @@ using AngularDotNetCRUDApp.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging; // Add this using statement
+using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.SpaServices.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
