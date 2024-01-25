@@ -47,6 +47,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
+
 // Register services and repositories
 builder.Services.AddScoped<BookService>();
 builder.Services.AddScoped<JsonFileRepository<Book>>(provider =>
@@ -62,7 +63,10 @@ builder.Services.AddScoped<JsonFileRepository<Quote>>(provider =>
     var jsonFilePath = Path.Combine(builder.Environment.ContentRootPath, "Data", "quotes.json");
     return new JsonFileRepository<Quote>(jsonFilePath);
 });
-
+builder.Services.AddSpaStaticFiles(configuration =>
+{
+    configuration.RootPath = "wwwroot";
+});
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<JsonFileRepository<User>>(provider =>
 {
@@ -105,11 +109,12 @@ app.UseEndpoints(endpoints =>
     endpoints.MapControllerRoute(
         name: "default",
         pattern: "{controller}/{action=Index}/{id?}");
+
 });
 // Configure SPA
 app.UseSpa(spa =>
 {
-    spa.Options.SourcePath = "FrontendApp";
+    spa.Options.SourcePath = "ClientApp";
 
     if (app.Environment.IsDevelopment())
     {
