@@ -61,7 +61,7 @@ export class MyQuotesComponent implements OnInit {
       'Authorization': `Bearer ${token}`
     });
 
-    this.http.get<Quote[]>(`https://localhost:7221/api/quotes/user/${userId}`, { headers })
+    this.http.get<Quote[]>(`https://my-angular-app-1628f29e665e.herokuapp.com/api/quotes/user/${userId}`, { headers })
       .subscribe((quotes) => {
         this.myQuotes = quotes;
       });
@@ -83,7 +83,7 @@ export class MyQuotesComponent implements OnInit {
           'Authorization': `Bearer ${token}`
         });
 
-        this.http.post('https://localhost:7221/api/quotes', this.newQuote, { headers })
+        this.http.post('https://my-angular-app-1628f29e665e.herokuapp.com/api/quotes', this.newQuote, { headers })
           .subscribe(() => {
             // Clear the input fields and refresh the quotes list
             this.newQuote = { id: 0, text: '', author: '', userId: 0 };
