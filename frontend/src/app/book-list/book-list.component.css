@@ -4,6 +4,7 @@
   align-items: center;
   margin-bottom: 5px;
   background-color: rgb(224, 224, 224);
+  padding: 10px; /* Add padding for spacing */
 }
 
 .book-details {
@@ -23,6 +24,7 @@
 /* Set a fixed width for the buttons */
 .book-buttons button {
   width: 100px; /* Adjust the width as needed */
+  margin: 0; /* Remove margin to ensure consistent sizing */
 }
 
 .btn-primary {
