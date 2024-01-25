@@ -13,11 +13,9 @@
       <span>{{ book.title }} by {{ book.author }}</span>
     </div>
     <div class="book-buttons">
-      <button class="btn btn-primary" (click)="editBook(book.id)">
-        Redigera
-      </button>
+      <button class="btn btn-primary" (click)="editBook(book.id)">Edit</button>
       <button class="btn btn-danger" (click)="deleteBook(book.id)">
-        Ta bort
+        Delete
       </button>
     </div>
   </li>
