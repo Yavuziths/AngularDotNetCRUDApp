@@ -97,8 +97,14 @@ app.UseHsts();
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.UseStaticFiles(); // Serve static files (CSS, JavaScript, images, etc.)
-
+app.UseStaticFiles();
+app.UseSpaStaticFiles();
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{controller}/{action=Index}/{id?}");
+});
 // Configure SPA
 app.UseSpa(spa =>
 {
