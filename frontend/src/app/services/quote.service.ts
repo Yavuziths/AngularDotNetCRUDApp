@@ -7,7 +7,7 @@ import { Quote } from '../models/quote.model';
   providedIn: 'root'
 })
 export class QuoteService {
-  private apiUrl = 'https://localhost:7221/api/quotes'; // Update with your API URL
+  private apiUrl = 'https://my-angular-app-1628f29e665e.herokuapp.com/api/quotes'; // Update with your API URL
 
   constructor(private http: HttpClient) {}
 
@@ -27,6 +27,6 @@ export class QuoteService {
       'Authorization': `Bearer ${token}`
     });
 
-    return this.http.get<Quote[]>(`https://localhost:7221/api/quotes/user/${userId}`, { headers });
+    return this.http.get<Quote[]>(`https://my-angular-app-1628f29e665e.herokuapp.com/api/quotes/user/${userId}`, { headers });
   }
 }

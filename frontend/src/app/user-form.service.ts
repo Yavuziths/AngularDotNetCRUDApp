@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class UserFormService {
-  private apiUrl = 'https://localhost:7221/api'; // Replace with your actual API URL
+  private apiUrl = 'https://my-angular-app-1628f29e665e.herokuapp.com/api'; // Replace with your actual API URL
 
   constructor(private http: HttpClient) {}
 
