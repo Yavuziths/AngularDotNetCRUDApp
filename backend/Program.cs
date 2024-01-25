@@ -108,7 +108,7 @@ app.UseEndpoints(endpoints =>
 // Configure SPA
 app.UseSpa(spa =>
 {
-    spa.Options.SourcePath = "frontend"; // Adjust this path based on your Angular app's location
+    spa.Options.SourcePath = "ClientApp";
 
     if (app.Environment.IsDevelopment())
     {
