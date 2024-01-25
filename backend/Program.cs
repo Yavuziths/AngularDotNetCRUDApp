@@ -108,7 +108,7 @@ app.UseEndpoints(endpoints =>
 // Configure SPA
 app.UseSpa(spa =>
 {
-    spa.Options.SourcePath = "ClientApp";
+    spa.Options.SourcePath = "FrontendApp";
 
     if (app.Environment.IsDevelopment())
     {
